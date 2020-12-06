@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoinMarketCap</title>
-    <link rel="stylesheet" type="style/css"
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" text="style.css"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
 </head>
 
-<body>
+<body>        
+
+    <h1>Resultado</h1>
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="page">Coin Market Cap</li>
+            <li class="breadcrumb-item active" aria-current="page" margin="15px">Coin Market Cap</li>
         </ol>
     </nav>
 
@@ -26,7 +29,7 @@
         // My api key
         var apikey = {
             // Substitua toda essa linha abaixo ( key )
-            key: 'Aqui vai o seu key da api https://pro.coinmarketcap.com/account'
+            key: '9eebb07d-f884-40f9-8ed5-9f62e10604f7'
         }
 
         //GET fetch Requisition
@@ -46,11 +49,12 @@
                     // Show api information
                     texto = texto + `
                   
-                  <div class="media">
-                      <img src="coin.jpg" class="align-self-center mr-3" alt="coin" width="100" height="60">
+                  <div class="media" color=" blue">
+                      <img src="coin.jpg" class="align-self-center mr-3" alt="coin" width="80" height="50">
                       <div class="media-body">
                       <h5 class="mt-2">${api.data[i].name}</h5>
-                      <p>${api.data[i].symbol}</p>
+                      <p>${api.data[i].symbol} ( ${api.data[i].first_historical_data} )</p>
+                      
                       </div>
                   </div>
              

@@ -1,0 +1,48 @@
+body {
+    background-image: url(banners_fundo.png);
+    color:blue;
+}
+
+.active {
+    color:blue;
+    margin: 10px;
+    padding: 50 12;
+    text-align: center;
+  
+}
+
+h1 {
+    color: rgb(28, 28, 194);
+    margin: 3px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 45px;
+    background: rgb(180, 175, 172);
+}
+
+
+    
+
+
+ol {
+    text-decoration-color: blue;
+    justify-items: center;
+    background-color:rgb(180, 175, 172); ;
+}
+    
+li {
+    background: #E9ECEF;
+    color:blue;
+}    
+
+
+h5 {
+    color: white;
+}
+
+p {
+    color:white;
+}
+
+
